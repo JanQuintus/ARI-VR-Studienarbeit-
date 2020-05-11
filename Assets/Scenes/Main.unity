@@ -1351,8 +1351,8 @@ MonoBehaviour:
     - rotr
     - wait
     AvailableSlots: 6
-    HelpAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
-    LevelCompletedAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    HelpAC: {fileID: 8300000, guid: a95facd9eae2cff42843d211439c98e0, type: 3}
+    LevelCompletedAC: {fileID: 8300000, guid: fa5868636a62c2a47ae00288fac421a3, type: 3}
   - DisplayName: Warten 2
     LevelName: Level_8
     EnabledDropperOptions:
