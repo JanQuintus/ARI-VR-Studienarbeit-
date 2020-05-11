@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &8117248003170489216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4747278116350063106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1227d5a9078ea4587faae44b021534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: land
+  DisplayName: Sinken
+  Description: Lasse ARI einen Schritt nach unten fliegen.
+  Icon: {fileID: 21300000, guid: 157cb3aa46f75a94c8ac96705d51f49a, type: 3}
+  CurrentProgramSpace: {fileID: 0}
+  ConditionType: 0
+  Direction: {x: 0, y: -1, z: 0}
+--- !u!1001 &3323691698803080015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 213196290680399858, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 753dcb4bdfa3fe44eae7a2cd7aab66ee, type: 2}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.82963437
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Name
+      value: LandProgramBlock Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53483f87328ae244e8716d1f4c2a8618, type: 3}
+--- !u!1 &4747278116350063106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+    type: 3}
+  m_PrefabInstance: {fileID: 3323691698803080015}
+  m_PrefabAsset: {fileID: 0}

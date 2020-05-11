@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7531823639973382010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3828958670315787212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feff446d186239844bf5a344f2d88e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: wait
+  DisplayName: Warten
+  Description: "ARI wartet solange bis die Bedingung nicht mehr erf\xFCllt ist."
+  Icon: {fileID: 21300000, guid: 353e5299d26747e4992cfae02f874397, type: 3}
+  CurrentProgramSpace: {fileID: 0}
+  ConditionType: 2
+--- !u!1001 &6548961912578022017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 213196290680399858, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cfe788935d6b5344eb09b758d23723a2, type: 2}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Name
+      value: WaitProgramBlock Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53483f87328ae244e8716d1f4c2a8618, type: 3}
+--- !u!1 &3828958670315787212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+    type: 3}
+  m_PrefabInstance: {fileID: 6548961912578022017}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6940385217576832894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2442597781746317622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d045a965f9f82a0449b5c7c3cd89445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: rotl
+  DisplayName: Nach links drehen.
+  Description: Drehe ARI nach links.
+  Icon: {fileID: 21300000, guid: acdda1ef513e28d43bff48743b4e62b3, type: 3}
+  CurrentProgramSpace: {fileID: 0}
+  Direction: -1
+--- !u!1001 &5630764021225418875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 213196290680399858, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a432fe70cda8f714ea64169dfb4f8f4c, type: 2}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.635
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Name
+      value: RotLeftProgramBlock Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53483f87328ae244e8716d1f4c2a8618, type: 3}
+--- !u!1 &2442597781746317622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+    type: 3}
+  m_PrefabInstance: {fileID: 5630764021225418875}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1488115011841483255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050841014706950818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1227d5a9078ea4587faae44b021534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: move
+  DisplayName: Laufen
+  Description: Lasse ARI einen Schritt nach vorne gehen.
+  Icon: {fileID: 21300000, guid: 5670d31977f24d141a1cda977bd2a4e8, type: 3}
+  CurrentProgramSpace: {fileID: 0}
+  ConditionType: 0
+  Direction: {x: 0, y: 0, z: 1}
+--- !u!1001 &8338320974990367727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 213196290680399858, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b1c238a6e74a2ab42b10f364c506f623, type: 2}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.82963437
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686196674164307383, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+        type: 3}
+      propertyPath: m_Name
+      value: MoveProgramBlock Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53483f87328ae244e8716d1f4c2a8618, type: 3}
+--- !u!1 &2050841014706950818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8052902012684437837, guid: 53483f87328ae244e8716d1f4c2a8618,
+    type: 3}
+  m_PrefabInstance: {fileID: 8338320974990367727}
+  m_PrefabAsset: {fileID: 0}

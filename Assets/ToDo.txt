@@ -1,0 +1,3 @@
+- Add Limitations to Movement (-> Program fails)
+- Add While, If ProgramBlocks
+- Add Goal (-> Level done)
