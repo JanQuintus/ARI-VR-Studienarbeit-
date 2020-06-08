@@ -6,7 +6,6 @@ public class ARIMover : MonoBehaviour
 {
     public Vector3 BoundsCenter;
     public Vector3 BoundsSize;
-    public AudioSource EngineSource;
 
     #region Private Variables
     private bool _isMoving = false;
@@ -24,24 +23,20 @@ public class ARIMover : MonoBehaviour
         {
             transform.position = _initialPosition + _moveDelta * _lerpValue;
             _lerpValue += 2f * Time.deltaTime;
-            EngineSource.pitch = (1 + Mathf.Sin(_lerpValue)) * Random.Range(0.75f, 1f);
             if (_lerpValue >= 1f)
             {
                 transform.position = _initialPosition + _moveDelta;
                 _isMoving = false;
-                EngineSource.pitch = 1;
             }
         }
         if (_isRotating)
         {
             transform.rotation = Quaternion.Euler(_initialRotation + _rotationDelta * _lerpValue);
             _lerpValue += 2f * Time.deltaTime;
-            EngineSource.pitch = 1 + Mathf.Sin(_lerpValue) * Random.Range(0.75f, 1f);
             if (_lerpValue >= 1f)
             {
                 transform.rotation = Quaternion.Euler(_initialRotation + _rotationDelta);
                 _isRotating = false;
-                EngineSource.pitch = 1;
             }
         }
     }

@@ -1112,6 +1112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartWithLevelLoad: 1
+  AfterLevelLoadDelay: 1
   Sections:
   - Title: Rotate Right PB
     ActivateObjects:
@@ -1131,6 +1132,7 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
 --- !u!4 &1401843877
 Transform:
   m_ObjectHideFlags: 0
@@ -1141,9 +1143,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2103765732}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1581981976
 PrefabInstance:
@@ -1288,7 +1291,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1401843877}
     m_Modifications:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -1298,7 +1301,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.097
+      value: -0.903
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -1328,7 +1331,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -1371,3 +1374,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveTime: 0
+--- !u!4 &2103765732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2103765729}
+  m_PrefabAsset: {fileID: 0}

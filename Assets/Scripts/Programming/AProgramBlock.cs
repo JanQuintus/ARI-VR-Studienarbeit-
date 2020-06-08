@@ -38,7 +38,10 @@ public abstract class AProgramBlock : MonoBehaviour
     }
 
     private void BeginGrab() => SetState(BlockState.GRABBING);
-    private void EndGrab() => SetState(BlockState.DEFAULT);
+    private void EndGrab() {
+        if (State != BlockState.IN_SLOT)
+            SetState(BlockState.DEFAULT);
+    }
 
     public abstract void Execute();
     public abstract bool IsExecuting();
@@ -64,6 +67,8 @@ public abstract class AProgramBlock : MonoBehaviour
                 gameObject.layer = 0;
                 CurrentProgramSpace = null;
                 transform.SetParent(null);
+                if (Grabbable.grabbedBy != null)
+                    Grabbable.grabbedBy.ForceRelease();
                 break;
             case BlockState.GRABBING:
                 rb.isKinematic = true;
@@ -80,6 +85,8 @@ public abstract class AProgramBlock : MonoBehaviour
                 rb.isKinematic = true;
                 rb.useGravity = false;
                 gameObject.layer = 8;
+                if (Grabbable.grabbedBy != null)
+                    Grabbable.grabbedBy.ForceRelease();
                 break;
         }
 

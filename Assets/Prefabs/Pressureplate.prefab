@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6062327551722548471}
   - component: {fileID: 6062327551722548470}
   - component: {fileID: 6062327551722548465}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pressureplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 6062327552059303101}
   - component: {fileID: 6062327552059303091}
   - component: {fileID: 6062327552059303090}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

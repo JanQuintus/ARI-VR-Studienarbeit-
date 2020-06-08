@@ -7,6 +7,7 @@ public class Button3D : MonoBehaviour
     public AudioSource Source;
     public AudioClip ClickAC;
     public UnityEvent OnButtonPressed;
+    public bool OnExit = false;
 
 #if UNITY_EDITOR
     [Header("Debug")]
@@ -29,7 +30,17 @@ public class Button3D : MonoBehaviour
     {
         if(other.gameObject.tag == "Finger")
         {
-            if (!Enabled) return;
+            if (!Enabled || OnExit) return;
+            OnButtonPressed?.Invoke();
+            Source.PlayOneShot(ClickAC);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Finger")
+        {
+            if (!Enabled || !OnExit) return;
             OnButtonPressed?.Invoke();
             Source.PlayOneShot(ClickAC);
         }

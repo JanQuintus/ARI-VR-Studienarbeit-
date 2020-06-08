@@ -8,6 +8,7 @@ public class ARI : MonoBehaviour
 {
     public static ARI Instance;
 
+    public System.Action OnLevelFinished;
 
     #region Public Variables
     public ProgramSpace MainProgramSpace;
@@ -111,14 +112,17 @@ public class ARI : MonoBehaviour
         GameState.Instance.Pause();
         _anim.SetTrigger("Goal");
         _as.PlayOneShot(GoalAC);
+        OnLevelFinished?.Invoke();
         if (LevelLoader.Instance.GetCurrentLevelData().LevelCompletedAC != null)
         {
+            VoiceAS.Stop();
+            yield return new WaitForSeconds(LevelLoader.Instance.GetCurrentLevelData().LevelEndDelay);
             VoiceAS.PlayOneShot(LevelLoader.Instance.GetCurrentLevelData().LevelCompletedAC);
             yield return new WaitForSeconds(LevelLoader.Instance.GetCurrentLevelData().LevelCompletedAC.length + 0.5f);
         }
         else
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(LevelLoader.Instance.GetCurrentLevelData().LevelEndDelay);
         }
 
 
@@ -168,5 +172,10 @@ public class ARI : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void PlayEndAnimation()
+    {
+        _anim.SetTrigger("End");
     }
 }

@@ -116,11 +116,13 @@ public class ProgramSpace : MonoBehaviour
             if (!AllowStructuredProgramBlocks && other.GetComponent<AStructureProgramBlock>() != null)
                 return;
 
-            if (other.GetComponent<Rigidbody>().useGravity)
+            AProgramBlock pb = other.GetComponent<AProgramBlock>();
+
+            if (pb.State == AProgramBlock.BlockState.DEFAULT)
             {
                 int nextSlotIndex = FindNextSlotIndex(other.transform.position);
                 if (nextSlotIndex != -1)
-                    InsertPB(other.GetComponent<AProgramBlock>(), nextSlotIndex);
+                    InsertPB(pb, nextSlotIndex);
             }
         }
     }

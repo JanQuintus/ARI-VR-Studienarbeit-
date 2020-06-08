@@ -541,7 +541,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -1896,7 +1896,7 @@ MonoBehaviour:
   Sections:
   - Title: Intro
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 6693a209be8ecc6428f506e575620451, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -1911,9 +1911,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Intro II
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 7b56613b4ce6cd0478eb2174f16ded02, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -1928,10 +1929,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Condition 1
     ActivateObjects:
     - {fileID: 1429177108}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 0fe3ffcc092c83047bf417c837f1820b, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -1946,10 +1948,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Condition 2
     ActivateObjects:
     - {fileID: 731744631}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: f96e98ff05d71bf4ea43120dea97cd9f, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -1964,10 +1967,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Condition 3
     ActivateObjects:
     - {fileID: 918978101}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 2980fa51826f05e41b93f5b882b5018a, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -1982,10 +1986,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Explain
     ActivateObjects:
     - {fileID: 731744631}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 3ab7a4a69807f414e869c0310c46bcb0, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2000,10 +2005,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Order 1
     ActivateObjects:
     - {fileID: 109711229}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 28ea2ba647bba9b47b3f0df51b2e867d, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2018,10 +2024,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Order 2
     ActivateObjects:
     - {fileID: 1875908524}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 00b56e8f62b85e141ac4e80d1f481d7b, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2036,10 +2043,11 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Order 3
     ActivateObjects:
     - {fileID: 918978101}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 6f900780866238247a96b14aa0b985ec, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2054,9 +2062,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: ForPB 10 Iterations
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: bb34062b41cff4443a90603c9c4a96bc, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2071,9 +2080,10 @@ MonoBehaviour:
     ProceedOnForValue: 10
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: FlyPB Condition WallInFront
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 22f3d672c421ae749b054b1ff8526624, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2088,9 +2098,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: fly:WALL_IN_FRONT
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: FlyPB To ForPB Slot 0
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: a4e041d5094123140b3d30171eacac72, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2105,9 +2116,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: fly:0
+    ProceedAfterAddToWhilePS: 
   - Title: MovePB To ForPB Slot 1
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 300e6d9069a4c504bb4783f7f36d03a0, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2122,9 +2134,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: move:1
+    ProceedAfterAddToWhilePS: 
   - Title: LandPB To ForPB Slot 2
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 9da081e90c03dc148b0cb64558fee9d8, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2139,9 +2152,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: land:2
+    ProceedAfterAddToWhilePS: 
   - Title: Run
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 07a742498e2db8a47a3e883ab08cbcdc, type: 3}
     ProceedAfterAudio: 0
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2156,9 +2170,10 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Explain
     ActivateObjects: []
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 0347efaecd6d655478d6bb5a492c5e23, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 
@@ -2173,6 +2188,7 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
 --- !u!4 &716228909
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,7 +2200,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1005553965}
   - {fileID: 1429177109}
   - {fileID: 731744632}
   - {fileID: 918978102}
@@ -2238,7 +2253,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -2457,7 +2472,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -2769,100 +2784,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77e50893c66d3194ca4f83723a223bd8, type: 3}
---- !u!1001 &1005553964
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 716228909}
-    m_Modifications:
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.854
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.347
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.70710653
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6507950780781487724, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-        type: 3}
-      propertyPath: m_Name
-      value: Arrow_MovePB
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b4f4ce43eb845f74aa1279e6d389b17b, type: 3}
---- !u!4 &1005553965 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005553964}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1005553966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6507950780781487724, guid: b4f4ce43eb845f74aa1279e6d389b17b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1005553964}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1005553967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005553966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53bc0bee70e255a4eaddb47a61c3d980, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveTime: 0
 --- !u!1001 &1036942617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3253,7 +3174,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -3768,7 +3689,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}

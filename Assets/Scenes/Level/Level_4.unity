@@ -575,7 +575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1274475879}
     m_Modifications:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -585,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.286
+      value: -0.714
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -615,7 +615,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -658,6 +658,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveTime: 0
+--- !u!4 &737196322 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
+    type: 3}
+  m_PrefabInstance: {fileID: 737196319}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &745050990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -870,7 +876,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1274475879}
     m_Modifications:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -880,7 +886,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.097
+      value: -0.903
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -910,7 +916,7 @@ PrefabInstance:
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
         type: 3}
@@ -953,6 +959,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveTime: 0
+--- !u!4 &1245777161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 71593399823165374, guid: b4f4ce43eb845f74aa1279e6d389b17b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1245777158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1274475876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,6 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartWithLevelLoad: 1
+  AfterLevelLoadDelay: 1
   Sections:
   - Title: Rotate Left PB
     ActivateObjects:
@@ -1100,6 +1113,7 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Display
     ActivateObjects:
     - {fileID: 737196320}
@@ -1118,6 +1132,7 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
   - Title: Motivation
     ActivateObjects: []
     SpeakAC: {fileID: 8300000, guid: bb7ae57a3c8e5b3469c7c7e0f9de4454, type: 3}
@@ -1135,6 +1150,7 @@ MonoBehaviour:
     ProceedOnForValue: 0
     ProceedSetCondition: 
     ProceedAfterAddToForPS: 
+    ProceedAfterAddToWhilePS: 
 --- !u!4 &1274475879
 Transform:
   m_ObjectHideFlags: 0
@@ -1145,9 +1161,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1245777161}
+  - {fileID: 737196322}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1364542042
 PrefabInstance:

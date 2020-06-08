@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Tutorial : MonoBehaviour
 {
-
     [System.Serializable]
     private struct TutorialSection
     {
@@ -44,6 +43,7 @@ public class Tutorial : MonoBehaviour
     }
 
     public bool StartWithLevelLoad = false;
+    public float AfterLevelLoadDelay = 1f; 
 
     [SerializeField]
     private TutorialSection[] Sections;
@@ -54,6 +54,7 @@ public class Tutorial : MonoBehaviour
 
     private void Awake()
     {
+
         _audioSource = GetComponent<AudioSource>();
 
         foreach(TutorialSection section in Sections)
@@ -75,6 +76,7 @@ public class Tutorial : MonoBehaviour
         ARI.Instance.MainProgramSpace.OnBlockAdded += OnPBAddedToMainPS;
         ARI.Instance.MainProgramSpace.OnBlockRemoved += OnPBRemovedFromMainPS;
         ARI.Instance.MainProgramSpace.OnExecute += OnMainPSExecute;
+        ARI.Instance.OnLevelFinished += OnLevelFinished;
         ProgramBlockConfigurator.Instance.OnConfigurationStart += OnConfigurationStart;
         ProgramBlockConfigurator.Instance.OnConfigurationEnd += OnConfigurationEnd;
         ProgramBlockConfigurator.Instance.OnShowDescription += OnShowDescription;
@@ -83,7 +85,13 @@ public class Tutorial : MonoBehaviour
         ProgramBlockConfigurator.Instance.OnChangeCondition += OnChangeCondition;
 
         if (StartWithLevelLoad)
-            NextSection();
+            StartCoroutine(NextSectionAfterDelay(AfterLevelLoadDelay));
+    }
+
+    private IEnumerator NextSectionAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        NextSection();
     }
 
     private void OnDestroy()
@@ -97,6 +105,7 @@ public class Tutorial : MonoBehaviour
         ARI.Instance.MainProgramSpace.OnBlockAdded -= OnPBAddedToMainPS;
         ARI.Instance.MainProgramSpace.OnBlockRemoved -= OnPBRemovedFromMainPS;
         ARI.Instance.MainProgramSpace.OnExecute -= OnMainPSExecute;
+        ARI.Instance.OnLevelFinished -= OnLevelFinished;
         ProgramBlockConfigurator.Instance.OnConfigurationStart -= OnConfigurationStart;
         ProgramBlockConfigurator.Instance.OnConfigurationEnd -= OnConfigurationEnd;
         ProgramBlockConfigurator.Instance.OnShowDescription -= OnShowDescription;
@@ -111,6 +120,8 @@ public class Tutorial : MonoBehaviour
             wpb.PS.OnBlockAdded -= OnPBAddedToWhilePS;
     }
 
+
+
     private void NextSection()
     {
         if (_currentSection == Sections.Length)
@@ -120,6 +131,8 @@ public class Tutorial : MonoBehaviour
         {
             foreach (GameObject activeObject in Sections[_currentSection].ActivateObjects)
                 activeObject.SetActive(false);
+
+            StopAllCoroutines();
         }
         if (++_currentSection < Sections.Length)
         {
@@ -359,6 +372,12 @@ public class Tutorial : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void OnLevelFinished()
+    {
+        StopAllCoroutines();
+        _audioSource.Stop();
     }
 
     #endregion

@@ -14,9 +14,10 @@ public class LevelLoader : MonoBehaviour
         public string DisplayName;
         public string LevelName;
         public string[] EnabledDropperOptions;
-        [Range(1, 9)]
+        [Range(0, 9)]
         public int AvailableSlots;
         public AudioClip HelpAC;
+        public float LevelEndDelay;
         public AudioClip LevelCompletedAC;
     }
 
@@ -90,14 +91,13 @@ public class LevelLoader : MonoBehaviour
 
     public void ResetLevel()
     {
-        foreach (GameObject collectable in GameObject.FindGameObjectsWithTag("Collectable"))
-        {
-            Destroy(collectable);
-        }
+        foreach (Collectable collectable in FindObjectsOfType<Collectable>())
+            DestroyImmediate(collectable.gameObject);
         foreach (Vector3 collectablePosition in _collectablePositions)
-        {
             Instantiate(CollectablePrefab, collectablePosition, Quaternion.identity);
-        }
+        foreach (ControlledPiston controlledPiston in FindObjectsOfType<ControlledPiston>())
+            controlledPiston.Reset();
+
         ARI.Instance.Collected = 0;
         ARI.Instance.ResetTransform();
     }
@@ -115,6 +115,8 @@ public class LevelLoader : MonoBehaviour
             yield return new WaitForSeconds(LevelLoadStartAC.length);
             _audioSource.Play();
 
+            foreach (Collectable collectable in FindObjectsOfType<Collectable>())
+                DestroyImmediate(collectable.gameObject);
 
             if (SceneManager.GetSceneByName(LevelDatas[_currentLevel].LevelName).isLoaded)
             {

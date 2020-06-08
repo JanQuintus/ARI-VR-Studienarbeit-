@@ -57,7 +57,7 @@ public class ControlledPiston : MonoBehaviour
 
         foreach(Renderer r in ColoredRenderers)
         {
-            r.material.SetColor("_BaseColor", _colors[_colorIndex]);
+            r.material.SetColor("_Color", _colors[_colorIndex]);
         }
     }
 
@@ -81,6 +81,14 @@ public class ControlledPiston : MonoBehaviour
         _anim.SetBool("Out", false);
         _audioSource.PlayOneShot(ReverseAC);
         _isExpanded = false;
+    }
+
+    public void Reset()
+    {
+        if (ExpandOnStart && !_isExpanded)
+            Expand();
+        if (!ExpandOnStart && _isExpanded)
+            Reverse();
     }
 }
 

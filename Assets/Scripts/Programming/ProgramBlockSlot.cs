@@ -30,7 +30,7 @@ public class ProgramBlockSlot : MonoBehaviour
         if(programBlock == null)
         {
             foreach (Renderer renderer in _renderer)
-                renderer.material.DOColor(DefaultColor, "_BaseColor", 0.2f);
+                renderer.material.DOColor(DefaultColor, "_Color", 0.2f);
             
             _assignedPB = null;
             return;
@@ -39,7 +39,7 @@ public class ProgramBlockSlot : MonoBehaviour
         programBlock.transform.SetParent(transform);
 
         foreach(Renderer renderer in _renderer)
-            renderer.material.DOColor(AssignedColor, "_BaseColor", 0.2f);
+            renderer.material.DOColor(AssignedColor, "_Color", 0.2f);
 
         programBlock.transform.DOMove(transform.position, 0.2f);
         programBlock.transform.rotation = transform.rotation;
@@ -70,10 +70,10 @@ public class ProgramBlockSlot : MonoBehaviour
     private IEnumerator ExecuteCor()
     {
         foreach (Renderer renderer in _renderer)
-            renderer.material.DOColor(ExecutingColor, "_BaseColor", 0.2f);
+            renderer.material.DOColor(ExecutingColor, "_Color", 0.2f);
         yield return new WaitUntil(() => _assignedPB.IsExecuting() == false);
         foreach (Renderer renderer in _renderer)
-            renderer.material.DOColor(AssignedColor, "_BaseColor", 0.2f);
+            renderer.material.DOColor(AssignedColor, "_Color", 0.2f);
         _assignedPB.SetGrabbable(true);
     }
 
@@ -94,26 +94,26 @@ public class ProgramBlockSlot : MonoBehaviour
         if (_disabled)
         {
             foreach (Renderer renderer in _renderer)
-                renderer.material.DOColor(DisabledColor, "_BaseColor", 0.2f);
+                renderer.material.DOColor(DisabledColor, "_Color", 0.2f);
         }
         else
         {
             if (_hasError)
             {
                 foreach (Renderer renderer in _renderer)
-                    renderer.material.DOColor(ErrorColor, "_BaseColor", 0.2f);
+                    renderer.material.DOColor(ErrorColor, "_Color", 0.2f);
             }
             else
             {
                 if (HasPB())
                 {
                     foreach (Renderer renderer in _renderer)
-                        renderer.material.DOColor(AssignedColor, "_BaseColor", 0.2f);
+                        renderer.material.DOColor(AssignedColor, "_Color", 0.2f);
                 }
                 else
                 {
                     foreach (Renderer renderer in _renderer)
-                        renderer.material.DOColor(DefaultColor, "_BaseColor", 0.2f);
+                        renderer.material.DOColor(DefaultColor, "_Color", 0.2f);
                 }
             }
         }

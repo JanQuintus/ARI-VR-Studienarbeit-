@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4307119240366375876}
   - component: {fileID: 3015961543432066257}
   - component: {fileID: 8097844446659344565}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Stem
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7883955247948851250}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: WallMount
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

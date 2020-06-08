@@ -706,7 +706,7 @@ MonoBehaviour:
   - Title: Explain
     ActivateObjects:
     - {fileID: 1384839170}
-    SpeakAC: {fileID: 8300000, guid: 2a0acf4c5213d8a478d36884795ed377, type: 3}
+    SpeakAC: {fileID: 8300000, guid: 2bbee66da7009a846a50e0e086872951, type: 3}
     ProceedAfterAudio: 1
     ProceedAfterDropPB: 
     ProceedAfterGrabPB: 

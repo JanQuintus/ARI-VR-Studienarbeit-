@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Intro : MonoBehaviour
 {
     public AudioClip[] ClipsToSay;
+    public GameObject LoadingAnimation;
 
     private AudioSource _as;
 
@@ -14,6 +15,8 @@ public class Intro : MonoBehaviour
     {
         _as = GetComponent<AudioSource>();
         StartCoroutine(SpeakAndLoadLevel());
+
+        LoadingAnimation.SetActive(false);
     }
 
     IEnumerator SpeakAndLoadLevel()
@@ -21,7 +24,7 @@ public class Intro : MonoBehaviour
         foreach(AudioClip ac in ClipsToSay)
         {
             _as.PlayOneShot(ac);
-            yield return new WaitForSeconds(ac.length + 0.5f);
+            yield return new WaitForSeconds(ac.length - 0.5f);
         }
 
 
@@ -29,6 +32,20 @@ public class Intro : MonoBehaviour
         PlayerPrefs.SetInt("current_game", PlayerPrefs.GetInt("games", 0));
         PlayerPrefs.SetInt("games", PlayerPrefs.GetInt("games", 0) + 1);
 
-        SceneManager.LoadScene("Main");
+        StartCoroutine(LoadLevel("Main"));
+    }
+
+    private IEnumerator LoadLevel(string level)
+    {
+        LoadingAnimation.SetActive(true);
+
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(level, LoadSceneMode.Single);
+
+        while (!loadOperation.isDone)
+            yield return null;
+
+        LoadingAnimation.SetActive(false);
+
+        SceneManager.UnloadSceneAsync("Intro");
     }
 }
